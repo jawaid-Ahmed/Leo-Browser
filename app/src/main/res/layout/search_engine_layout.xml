@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/darkColor"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@drawable/goog"
+            android:focusable="true"
+            android:text="Google"
+            android:id="@+id/googleEngine"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor"
+            android:textSize="32dp"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@drawable/yahoo_engine"
+            android:focusable="true"
+            android:text="Yahoo"
+            android:id="@+id/yahoo_engine"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor"
+            android:textSize="32dp"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@drawable/duckduckgo"
+            android:focusable="true"
+            android:text="Duck Duck Go"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:id="@+id/duck_duck_GoEngine"
+
+            android:textColor="@color/whiteColor"
+            android:textSize="32dp"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@drawable/bing_engine"
+            android:focusable="true"
+            android:text="Bing"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:id="@+id/bingengine"
+
+            android:textColor="@color/whiteColor"
+            android:textSize="32dp"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@drawable/wikipedia"
+            android:focusable="true"
+            android:text="Wikipedia"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:id="@+id/wikipediaEngine"
+
+            android:textColor="@color/whiteColor"
+            android:textSize="32dp"></Button>
+
+        <Button
+            android:id="@+id/baiduengine"
+
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@drawable/baidu_engine"
+            android:focusable="true"
+            android:text="Baidu"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor"
+            android:textSize="32dp"></Button>
+
+        <Button
+            android:id="@+id/askEngine"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@drawable/ask_engine"
+            android:focusable="true"
+            android:text="Ask"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor"
+            android:textSize="32dp"></Button>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

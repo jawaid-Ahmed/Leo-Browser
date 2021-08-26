@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/darkColor"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:id="@+id/filesMenu"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/imagesfilemanager"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_margin="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image"
+                android:maxWidth="@dimen/filesbtnwidth"
+                android:maxHeight="@dimen/filesbtnheight"
+                android:layout_width="@dimen/filesbtnwidth"
+                android:layout_height="@dimen/filesbtnheight"></ImageView>
+
+            <TextView
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/filesbtntextsize"
+                android:textStyle="bold"
+                android:text="Images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:id="@+id/noOfImages"
+                android:text="loading..."
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/videosfilemanager"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_margin="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/video"
+                android:maxWidth="@dimen/filesbtnwidth"
+                android:maxHeight="@dimen/filesbtnheight"
+                android:layout_width="@dimen/filesbtnwidth"
+                android:layout_height="@dimen/filesbtnheight"></ImageView>
+
+            <TextView
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/filesbtntextsize"
+                android:textStyle="bold"
+                android:text="Videos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:id="@+id/noOfVideos"
+                android:text="loading..."
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/docsfilemanager"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_margin="15dp"
+                android:scaleType="fitCenter"
+                android:maxWidth="@dimen/filesbtnwidth"
+                android:maxHeight="@dimen/filesbtnheight"
+                android:src="@drawable/documents"
+                android:layout_width="@dimen/filesbtnwidth"
+                android:layout_height="@dimen/filesbtnheight"></ImageView>
+
+            <TextView
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/filesbtntextsize"
+                android:textStyle="bold"
+                android:text="Documents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:id="@+id/noOfDocs"
+                android:text="loading..."
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/apksfilemanager"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/apks"
+                    android:layout_margin="15dp"
+                    android:maxWidth="@dimen/filesbtnwidth"
+                    android:maxHeight="@dimen/filesbtnheight"
+                    android:layout_width="@dimen/filesbtnwidth"
+                    android:layout_height="@dimen/filesbtnheight"></ImageView>
+
+                <TextView
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/filesbtntextsize"
+                    android:textStyle="bold"
+                    android:text="Apks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:id="@+id/noOfApks"
+                    android:text="loading..."
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/musicfilemanager"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/music1"
+                    android:layout_margin="15dp"
+                    android:maxWidth="@dimen/filesbtnwidth"
+                    android:maxHeight="@dimen/filesbtnheight"
+                    android:layout_width="@dimen/filesbtnwidth"
+                    android:layout_height="@dimen/filesbtnheight"></ImageView>
+
+                <TextView
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/filesbtntextsize"
+                    android:textStyle="bold"
+                    android:text="Music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:id="@+id/noOfMusics"
+                    android:text="loading..."
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/zipsfilemanager"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/zips"
+                    android:layout_margin="15dp"
+                    android:maxWidth="@dimen/filesbtnwidth"
+                    android:maxHeight="@dimen/filesbtnheight"
+                    android:layout_width="@dimen/filesbtnwidth"
+                    android:layout_height="@dimen/filesbtnheight"></ImageView>
+
+                <TextView
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/filesbtntextsize"
+                    android:textStyle="bold"
+                    android:text="Archives"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:id="@+id/noOfArchives"
+                    android:text="loading..."
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/filesList"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/backBtnFiles"
+            android:layout_width="match_parent"
+            android:text="Images"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:textSize="12dp"
+            android:paddingLeft="5dp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/whiteColor"
+            android:background="@android:color/transparent"
+            android:layout_height="40dp"></Button>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

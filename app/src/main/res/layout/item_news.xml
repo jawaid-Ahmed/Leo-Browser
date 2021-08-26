@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/darkColor"
+    android:gravity="left"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1.1"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="15dp"
+        android:elevation="10dp">
+    <ImageView
+        android:id="@+id/urlImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:scaleType="centerCrop"
+        android:text="urlImage"></ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.9"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Author: "
+            android:textColor="@color/newsTextColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/author"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Title"
+            android:layout_above="@id/publisheddateLayout"
+            android:textColor="@color/newsTextColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Description"
+            android:textColor="@color/newsTextColor"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/publisheddateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/publisheddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/date_bg"
+                android:paddingHorizontal="3dp"
+                android:text="@string/date"
+                android:textColor="@color/newsTextColor" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_marginTop="10dp"
+            android:text="url"
+            android:textColor="@color/newsTextColor"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="content"
+            android:textColor="@color/newsTextColor"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

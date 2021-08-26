@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">LeoBrowser</string>
+    <string name="APP_ID_REAL">ca-app-pub-1582220138871006~8600279286</string>
+    <string name="REWARDED_ADD_ID">ca-app-pub-1582220138871006/9119154039</string>
+    <string name="INTERSTITIAL_ADD_ID">ca-app-pub-1582220138871006/2286152377</string>
+
+    <string name="APP_ID_TEST">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="REWARDED_TEST_ID">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="title_activity_collapsing">ScrollingActivity</string>
+    <string name="to_do">ToDo</string>
+    <string name="enter_note">enterNote</string>
+    <string name="date">02/07/2020</string>
+
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="loading_video">Loading...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    //fetchDownloadstrings
+    <string name="pause">PAUSE</string>
+    <string name="resume">RESUME</string>
+    <string name="download">Download</string>
+    <string name="permission_not_enabled">Please enable the Write External Storage Permission</string>
+    <string name="delete_files">Delete Downloads test files from the file system and try again.</string>
+    <string name="delete_title">Are you sure you want to delete %1$s?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="view">VIEW</string>
+    <string name="wifiOnly">WiFi Only</string>
+    <string name="retry">RETRY</string>
+    <string name="start">Start</string>
+    <string name="complete_over">%1$d/%2$d</string>
+    <string name="start_fetching">Click start to start fetching game files.</string>
+    <string name="fetch_started">Fetching Game Files…</string>
+    <string name="fetch_done">Fetching done.</string>
+    <string name="fetch_failed">An error occurred whiles fetching the game files.</string>
+    <string name="reset">RESET</string>
+    <string name="single_download_demo">Single Download Demo</string>
+    <string name="download_list_demo">Download List Demo</string>
+    <string name="game_file_download_demo">Game File Download Demo</string>
+    <string name="percent_progress">%1$d%%</string>
+    <string name="downloading">downloading…</string>
+    <string name="queued">QUEUED</string>
+    <string name="added">ADDED</string>
+    <string name="status_unknown">Status Unknown</string>
+    <string name="delete_all_files">Delete Downloaded Files</string>
+    <string name="file_server">FETCH FILE SERVER DEMO</string>
+    <string name="downloaded_files_deleted">Downloads Files Deleted</string>
+    <string name="game_download_error">An error occurred, could not get game files.</string>
+    <string name="failed_multi_enqueue">Failed Multi Enqueue Demo</string>
+    <string name="multi_fragment">MULTI FRAGMENT DEMO</string>
+    <string name="enqueue_error">Could not enqueue this request. Check logcat.</string>
+    <string name="download_eta_sec">%1$ds left</string>
+    <string name="download_eta_min">%1$dm %2$ds left</string>
+    <string name="download_eta_hrs">%1$dh %2$dm %3$ds left</string>
+    <string name="download_speed_bytes">%1$d B/s</string>
+    <string name="download_speed_kb">%1$s KB/s</string>
+    <string name="download_speed_mb">%1$s MB/s</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="preference_file_key">settings_pref</string>
+    <string name="darkModeTheme">dark_mode</string>
+    <string name="pref_server">pref_server</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_share">Share</string>
+    <string name="extended_fab_content_desc">extended_fab_description</string>
+    <string name="extended_fab_label">Show Controls</string>
+    <string name="title_no_location_dialog">Download</string>
+    <string name="subtitle_no_location_dialog">Share</string>
+    <string name="understood_label">View</string>
+    <string name="mainPref">Main_Prefs</string>
+    <string name="cell_image">search_engine_image</string>
+    <string name="picker_box_arrows_icon">picker_box</string>
+    <string name="search_hint">search any web address</string>
+
+</resources>

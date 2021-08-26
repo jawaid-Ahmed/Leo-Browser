@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:maxWidth="150dp"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="@color/darkColor"
+    android:layout_margin="20dp">
+
+    <Button
+        android:id="@+id/tv_title"
+        android:background="@android:color/transparent"
+        android:textSize="14dp"
+        android:textColor="@color/whiteColor"
+        tools:text="Download"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+
+    <Button
+        android:id="@+id/tv_subtitle"
+        android:textSize="14dp"
+        android:textColor="@color/whiteColor"
+        tools:text="Save"
+        android:background="@android:color/transparent"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+
+    <Button
+        android:id="@+id/tv_action"
+        android:background="@android:color/transparent"
+        android:textSize="14dp"
+        android:textColor="@color/whiteColor"
+        tools:text="Share"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+
+</LinearLayout>

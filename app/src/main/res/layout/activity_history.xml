@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkColor"
+    android:id="@+id/mainHistoryView"
+    tools:context=".Activities.HistoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/history_bookmark_toolbar" />
+
+        <Button
+            android:background="@drawable/history_datebg"
+            android:id="@+id/expandButtonToday"
+            android:text="Today"
+            android:textColor="@color/newsTextColor"
+            android:textAlignment="textStart"
+            android:paddingLeft="10dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/raleway_semibold"
+            android:drawableRight="@drawable/ic_collapse_24"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            app:el_duration="500"
+            app:el_expanded="true"
+            app:el_parallax="0.5">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/historyRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></androidx.recyclerview.widget.RecyclerView>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+        <Button
+            android:background="@drawable/history_datebg"
+            android:id="@+id/expandButtonYesterday"
+            android:text="Yesterday"
+            android:textAlignment="textStart"
+            android:paddingLeft="10dp"
+            android:textColor="@color/newsTextColor"
+            android:textAllCaps="false"
+            android:fontFamily="@font/raleway_semibold"
+            android:drawableRight="@drawable/ic_expand_24"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layoutYesterday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/historyRecyclerViewYesterday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></androidx.recyclerview.widget.RecyclerView>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <Button
+            android:background="@drawable/history_datebg"
+            android:id="@+id/expandButtonBeforeYesterday"
+            android:text="Before Yesterday"
+            android:fontFamily="@font/raleway_semibold"
+            android:drawableRight="@drawable/ic_expand_24"
+            android:textSize="12dp"
+            android:textColor="@color/newsTextColor"
+            android:textAlignment="textStart"
+            android:paddingLeft="10dp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layoutBeforeYesterday"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/historyRecyclerBeforeYesterday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></androidx.recyclerview.widget.RecyclerView>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_nav_bg"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/clearhistoryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Clear"
+            android:textSize="13dp"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"></Button>
+
+        <Button
+            android:id="@+id/edithistoryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Edit"
+            android:textSize="13dp"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

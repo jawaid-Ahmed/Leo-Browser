@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="12dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkColor"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:weightSum="3">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/urlImage"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:text="urlImage"></ImageView>
+
+                <LinearLayout
+                    android:id="@+id/publisheddateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="3dp"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/publisheddate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/date_bg"
+                        android:paddingHorizontal="3dp"
+                        android:text="@string/date"
+                        android:textSize="8dp"
+                        android:textColor="@color/newsTextColor"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Author: "
+                android:textColor="@color/newsTextColor"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/author"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Title"
+                android:textColor="@color/newsTextColor"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Description"
+                android:textColor="@color/newsTextColor"
+                android:textSize="8dp"
+                android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description"
+                android:layout_marginTop="10dp"
+                android:text="url"
+                android:textColor="@color/newsTextColor"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="content"
+                android:textColor="@color/newsTextColor"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

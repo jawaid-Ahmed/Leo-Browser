@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="transparent">#00ffffff</color>
+    <color name="bgGradientStart">#000000</color>
+    <color name="bgGradientEnd">#d8000000</color>
+
+    <color name="bgSolidDark">#55000000</color>
+
+    <color name="headGradientStart">#00ffffff</color>
+    <color name="headGradientCenter">#00ffffff</color>
+    <color name="headGradientEnd">#96000000</color>
+
+    <color name="colorListDivider">#e6e6e6</color>
+
+    <color name="darkColor2">#E4E2E2</color>
+    <color name="darkColor">#FFFFFF</color>
+    <color name="lightdarkColor">#7E7C83</color>
+    <color name="whiteColor">#353535</color>
+    <color name="newsTextColor">#353535</color>
+    <color name="home_iconsTextColor">#353535</color>
+
+
+
+    <color name="colorsearchbar">#C49816</color>
+    <color name="buttonsbg">#FFFFFF</color>
+    <color name="dark_gray">#ACA4A4</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="skyblue">#8C5BE3</color>
+    <color name="colorPurple">#A232B5</color>
+    <color name="home_edittext">#4A4949</color>
+
+</resources>

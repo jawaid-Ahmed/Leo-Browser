@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jawaid.liobrowser.Activities.CollapsingActivity">
+
+    <item
+        android:id="@+id/storage_download"
+        android:orderInCategory="100"
+        android:title="Select Storage" />
+    <item
+        android:id="@+id/threads_download"
+        android:orderInCategory="100"
+        android:title="Max Download Threads" />
+
+</menu>

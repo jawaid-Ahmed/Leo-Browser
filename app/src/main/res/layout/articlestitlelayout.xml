@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/darkColor"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:background="@color/darkColor"
+        android:id="@+id/articlesRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:textColor="@color/whiteColor"
+            android:id="@+id/articlesVerticle"
+            android:text="Articles Verticle"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RadioButton>
+        <RadioButton
+            android:textColor="@color/whiteColor"
+            android:id="@+id/articlesHorzontle"
+            android:text="Articles Horizontal"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RadioButton>
+        <RadioButton
+            android:id="@+id/articlesNone"
+            android:text="None"
+            android:textColor="@color/whiteColor"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RadioButton>
+        <RadioButton
+            android:id="@+id/articlesAll"
+            android:text="Both of Them"
+            android:textColor="@color/whiteColor"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RadioButton>
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkColor"
+    tools:context=".Activities.SettingsActivity">
+
+    <include
+        layout="@layout/history_bookmark_toolbar"/>
+
+    <Button
+        android:id="@+id/feedBackButton"
+        android:text="Feedback"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:background="@drawable/history_datebg"
+        android:textAlignment="textStart"
+        android:paddingLeft="15dp"
+        android:textColor="@color/whiteColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+
+    <Button
+        android:id="@+id/headlinesTitleHorizontal"
+        android:text="Search Articles About"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:background="@drawable/history_datebg"
+        android:textAlignment="textStart"
+        android:paddingLeft="15dp"
+        android:textColor="@color/whiteColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+    <Button
+        android:id="@+id/headlinesTitleVerticlev"
+        android:text="Show Articles"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:background="@drawable/history_datebg"
+        android:textAlignment="textStart"
+        android:paddingLeft="15dp"
+        android:textColor="@color/whiteColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+    <Button
+        android:background="@drawable/history_datebg"
+        android:id="@+id/advanceSettingsButton"
+        android:text="Advance Settings"
+        android:textColor="@color/newsTextColor"
+        android:textAlignment="textStart"
+        android:paddingLeft="10dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/raleway_semibold"
+        android:drawableRight="@drawable/ic_collapse_24"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/advancedSettingsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        app:el_duration="500"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+
+
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/whiteColor"
+                android:text="Save Forms Data"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:checked="true"
+                android:id="@+id/formsataSwich"
+                android:thumb="@drawable/rect_thumb"
+                app:track="@drawable/rect_track"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"></androidx.appcompat.widget.SwitchCompat>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/whiteColor"
+                android:text="Save Passwords"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/passworddataSwich"
+                android:thumb="@drawable/rect_thumb"
+                app:track="@drawable/rect_track"
+                android:checked="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"></androidx.appcompat.widget.SwitchCompat>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/whiteColor"
+                android:text="Load Images Auto"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/loadImagesSwich"
+                android:thumb="@drawable/rect_thumb"
+                app:track="@drawable/rect_track"
+                android:checked="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"></androidx.appcompat.widget.SwitchCompat>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/whiteColor"
+                android:text="Show Zoom Controls"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/zoomControlsSwich"
+                android:thumb="@drawable/rect_thumb"
+                app:track="@drawable/rect_track"
+                android:layout_marginRight="15dp"
+                android:checked="false"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"></androidx.appcompat.widget.SwitchCompat>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+
+
+</LinearLayout>

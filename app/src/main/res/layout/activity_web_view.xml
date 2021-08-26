@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ec="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootViewhome"
+    android:background="@drawable/background_gradient"
+    android:clipChildren="false"
+    tools:context="com.jawaid.liobrowser.Activities.WebViewActivity">
+
+
+    <com.jawaid.liobrowser.TabImplementation.ECBackgroundSwitcherView
+        android:id="@+id/ec_bg_switcher_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addRemoveButtons"
+        android:foreground="@drawable/background_gradient">
+
+
+    </com.jawaid.liobrowser.TabImplementation.ECBackgroundSwitcherView>
+
+    <com.jawaid.liobrowser.TabImplementation.ItemsCountView
+        android:id="@+id/items_count_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:clipChildren="false"
+        android:orientation="horizontal" />
+
+    <com.jawaid.liobrowser.TabImplementation.ECPagerView
+        android:id="@+id/ec_pager_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/transparent"
+        ec:cardHeaderHeightExpanded="300dp"
+        ec:cardHeight="450dp"
+        ec:cardWidth="250dp" />
+
+    <LinearLayout
+        android:id="@+id/addRemoveButtons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_below="@+id/ec_pager_element"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageButton
+                android:id="@+id/removeCard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close_24"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/addCard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_add_box_24"></ImageButton>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/bottom_nav" />
+
+</RelativeLayout>
+

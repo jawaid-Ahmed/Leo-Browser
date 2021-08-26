@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:id="@+id/content_scrolling"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.WebViewActivity">
+
+    <Button
+        android:background="@drawable/history_datebg"
+        android:id="@+id/expandButtonhome"
+        android:text="International Headlines"
+        android:textColor="@color/newsTextColor"
+        android:textAlignment="textStart"
+        android:paddingLeft="10dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/raleway_semibold"
+        android:drawableRight="@drawable/ic_expand_24"
+        android:textSize="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_layouthome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:el_duration="500"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></androidx.recyclerview.widget.RecyclerView>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

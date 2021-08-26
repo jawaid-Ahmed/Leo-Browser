@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/darkColor"
+    android:layout_above="@+id/bottom_nav"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_view"></include>
+
+    <LinearLayout
+        android:id="@+id/homeLayout"
+        android:layout_below="@+id/edittextdrawableslayoutmain"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/darkColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/darkColor"
+            android:id="@+id/content_socialLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/recyclerView"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/edittextdrawableslayoutmain">
+
+            <LinearLayout
+                android:weightSum="6"
+                android:id="@+id/firstlinelenearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_marginHorizontal="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/youtubebtn"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/youtube"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Youtube"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="10dp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/googlebtn"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/google"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Google"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="11dp"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/yahoobtn"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/yahoo"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Yahoo"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="11dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/twiterbtn"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/twitter"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Twitter"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="11dp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondlinelenearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstlinelenearlayout"
+                android:layout_marginTop="6dp"
+                android:layout_marginHorizontal="5dp"
+                android:weightSum="6"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/spotifybtn"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/spotify"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Spotify"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="11dp"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/amazon"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/amazon"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Amazon"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="11dp"></TextView>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/gmailbtn"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/weather"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Weather"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="11dp"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/crickbuzzbtn"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ball"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Cricbuzz"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="11dp"></TextView>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/thirdlinelenearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondlinelenearlayout"
+                android:layout_marginTop="6dp"
+                android:layout_marginHorizontal="5dp"
+                android:weightSum="5"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/gamingbtn"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/tiktok"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="TikTok"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="11dp"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/pinterestbtn"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:padding="5dp"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/pinterest"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Pinterest"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="11dp"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/musicbtn"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/music"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Music"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="11dp"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/entertainmentbtn"
+                        android:layout_width="@dimen/socialbtnwidth"
+                        android:layout_height="@dimen/socialbtnheight"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/duckduckgo"></ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="DuckDuckGo"
+                        android:textAlignment="center"
+                        android:textColor="@color/home_iconsTextColor"
+                        android:textSize="11dp"></TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/text_view_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondlinelenearlayout"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/newsTextColor"
+                android:textSize="22sp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@+id/content_socialLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <include layout="@layout/content_scrolling" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/extended_fab"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="35dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/Theme.App"
+        android:layout_gravity="bottom|right"
+        android:contentDescription="@string/extended_fab_content_desc"
+        app:icon="@drawable/ic_menu_black_24dp"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <im.delight.android.webview.AdvancedWebView
+        android:id="@+id/advancedWebView"
+        android:visibility="gone"
+        android:layout_below="@+id/edittextdrawableslayoutmain"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </im.delight.android.webview.AdvancedWebView>
+
+    <ImageView
+        android:id="@+id/bitmapHome"
+        android:layout_width="match_parent"
+        android:background="@color/darkColor"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"></ImageView>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="60dp"
+        android:background="@color/darkColor"
+        android:layout_below="@+id/content_scrolling"
+        android:visibility="gone">
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            android:visibility="gone"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/nightModeAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/content_scrolling"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:visibility="visible"
+            app:lottie_rawRes="@raw/placeholder"></com.airbnb.lottie.LottieAnimationView>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noInternetLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="60dp"
+        android:layout_below="@+id/edittextdrawableslayoutmain"
+        android:visibility="gone">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottienointernet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/nointernet"></com.airbnb.lottie.LottieAnimationView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

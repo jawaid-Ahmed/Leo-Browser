@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:textAlignment="textStart"
+        android:id="@+id/feedbackEdittexttitle"
+        android:layout_margin="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:background="@drawable/history_datebg"
+        android:textSize="15dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:textColor="@color/whiteColor"
+        android:textAllCaps="false"
+        android:hint="Subject"
+        android:layout_height="wrap_content"></EditText>
+
+    <ScrollView
+        android:id="@+id/textscroll"
+        android:layout_below="@id/feedbackEdittexttitle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    <EditText
+        android:textAlignment="textStart"
+        android:id="@+id/feedbackEdittextmessage"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/history_datebg"
+        android:textSize="15dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:textColor="@color/whiteColor"
+        android:textAllCaps="false"
+        android:hint="please give us feedback to improve performance"
+        android:layout_height="200dp"></EditText>
+    </ScrollView>
+
+
+
+</RelativeLayout>

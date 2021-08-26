@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:background="@color/darkColor"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/resourseslayout"
+            android:layout_margin="5dp"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:text="File: "
+                android:padding="3dp"
+                android:textColor="@color/whiteColor"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:id="@+id/download_dial_text"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:text="Unknown Name"
+                android:padding="3dp"
+                android:maxLines="2"
+                android:textColor="@color/whiteColor"
+                android:layout_height="wrap_content"></TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+           android:id="@+id/resourseslayout"
+            android:layout_above="@+id/download_dial_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/sizef"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:text="Size"
+                android:layout_alignParentStart="true"
+                android:layout_marginHorizontal="5dp"
+                android:layout_toStartOf="@+id/download_dial_progress"
+                android:textColor="@color/whiteColor"
+                android:textSize="15sp"></TextView>
+
+
+            <ProgressBar
+                android:id="@+id/download_dial_progress"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:indeterminateDrawable="@drawable/rotate"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent">
+
+            </ProgressBar>
+
+
+            <TextView
+                android:id="@+id/download_dial_sizeText"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:text="Loading resources..."
+                android:layout_toEndOf="@+id/download_dial_progress"
+                android:textColor="@color/whiteColor"
+                android:textSize="15sp"></TextView>
+
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/download_dial_btn"
+            android:background="@drawable/download_buttonbg"
+            android:layout_margin="15dp"
+            android:text="Download"
+            android:fontFamily="@font/raleway_semibold"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchAble.SearchAbleActivity">
+
+    <RelativeLayout
+        android:id="@+id/edittextdrawableslayoutmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:padding="5dp"
+        android:visibility="visible"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/edittextdrawableslayoutsearchable"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittextbg"
+            >
+
+
+
+
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_homesearchable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_toLeftOf="@id/drawableRightsearchable"
+                android:layout_toRightOf="@id/drawableLeftsearchable"
+                android:background="@android:color/transparent"
+                android:elevation="8dp"
+                android:hint="Search any web address"
+                android:textColorHint="@color/lightdarkColor"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="3dp"
+                android:textSize="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/newsTextColor"/>
+
+            <ImageButton
+                android:id="@+id/drawableLeftsearchable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:src="@drawable/goog"></ImageButton>
+
+            <View
+                android:layout_toEndOf="@id/search_homesearchable"
+                android:layout_toLeftOf="@+id/drawableRight"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+
+            <Button
+                android:id="@+id/drawableRightsearchable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-1dp"
+                android:background="@android:color/transparent"
+                android:text="close"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColor"
+                android:textSize="12dp"></Button>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

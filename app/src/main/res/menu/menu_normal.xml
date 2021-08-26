@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jawaid.liobrowser.Activities.CollapsingActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_share"
+        android:scaleType="centerInside"
+        android:padding="@dimen/menuIconsPadding"
+        android:icon="@drawable/ic_history_share_24"
+        app:showAsAction="ifRoom" />
+</menu>

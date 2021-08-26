@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="7"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="5dp"
+    android:padding="2dp"
+    android:background="@color/whiteColor"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/download1"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+
+        android:background="@color/darkColor"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_margin="8dp"
+            android:layout_width="40dp"
+            android:padding="3dp"
+            android:layout_height="40dp">
+            <ImageView
+                android:id="@+id/downloadimage1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@color/darkColor"
+                android:src="@drawable/ic_file"></ImageView>
+
+            <TextView
+                android:id="@+id/fileExtension"
+                android:textSize="8dp"
+                android:textColor="@color/darkColor"
+                android:background="@color/whiteColor"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="mp4"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="5.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/whiteColor"
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="This is downloading title"></TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="3dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></ProgressBar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:layout_marginVertical="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/progress_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10%"
+                    android:textColor="@color/whiteColor"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="8dp" />
+
+                <TextView
+                    android:id="@+id/remaining_TextView"
+                    android:layout_width="0dp"
+                    android:textColor="@color/whiteColor"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="10s" />
+
+
+
+                <TextView
+                    android:id="@+id/downloadSpeedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_marginHorizontal="3dp"
+                    android:textColor="@color/whiteColor"
+                    android:layout_height="wrap_content"
+                    android:text="204 MB/s" />
+
+                <TextView
+                    android:textColor="@color/whiteColor"
+                    android:id="@+id/status_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic|bold"
+                    android:text="Status" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/actionButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="40dp"
+            android:layout_margin="5dp"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/buttonshape"
+            android:src="@drawable/ic_retry"
+            android:layout_marginRight="8dp"
+            android:layout_height="35dp"></ImageButton>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/download2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/downloadimage2"
+            android:layout_width="30dp"
+            android:layout_weight="0.6"
+            android:layout_height="match_parent"
+            android:src="@drawable/igoogle"></ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/downloadtitle2"
+                android:textColor="@color/whiteColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="This is downloading title"></TextView>
+
+            <ProgressBar
+                android:id="@+id/downloadbar2"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ProgressBar>
+
+            <TextView
+                android:id="@+id/downloadpercent2"
+                android:textColor="@color/whiteColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%74"></TextView>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/downloadbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.4"
+            android:src="@android:drawable/ic_media_play"></ImageButton>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

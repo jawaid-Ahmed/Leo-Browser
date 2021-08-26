@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "232450013832",
+    "firebase_url": "https://firebrowser-e8c6f.firebaseio.com",
+    "project_id": "firebrowser-e8c6f",
+    "storage_bucket": "firebrowser-e8c6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232450013832:android:6812707a7fd6d5b3e8bd3d",
+        "android_client_info": {
+          "package_name": "com.jawaid.firebrowser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232450013832-5e2aosp1u17eebdbhd9r0od0vn4d54vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP4z3KVKUA80u0NR8ro-O-urUwlkweGJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232450013832-5e2aosp1u17eebdbhd9r0od0vn4d54vq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

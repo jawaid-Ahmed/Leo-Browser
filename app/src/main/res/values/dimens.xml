@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="app_bar_height">300dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="bottommenubutton_height">38dp</dimen>
+    <dimen name="bottommenubutton_width">38dp</dimen>
+    <dimen name="socialbtnwidth">70dp</dimen>
+    <dimen name="socialbtnheight">58dp</dimen>
+    <dimen name="socialbtnheighttablet">94dp</dimen>
+    <dimen name="socialbtnwidth_tablet">112dp</dimen>
+    <dimen name="socialbtn_textSize">16dp</dimen>
+    <dimen name="filesbtnwidth">44dp</dimen>
+    <dimen name="filesbtnheight">44dp</dimen>
+    <dimen name="menuIconsPadding">10dp</dimen>
+    <dimen name="filesbtntextsize">13dp</dimen>
+</resources>
